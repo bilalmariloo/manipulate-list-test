@@ -1,0 +1,9 @@
+<h1>Liste de produits</h1>
+
+<div id="products-list">
+  <img [src]="products[0].image" alt=""/>
+  <h3>{{ products[0].title }}</h3>
+  <p>{{ products[0].description }}</p>
+  <div>{{ products[0].price | currency : 'EUR' : '' : '.0-2' }} €</div>
+  <button>Supprimer</button>
+</div>
